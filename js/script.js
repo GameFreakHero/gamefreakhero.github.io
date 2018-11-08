@@ -1,4 +1,4 @@
-for(var i = 1; i < 20; i++){
+for(var i = 1; i < 3; i++){
   var image = new Image();
   image.src = 'images/' + i + '.jpg';
 
