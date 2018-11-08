@@ -1,11 +1,14 @@
 for(var i = 1; i < 3; i++){
-  var image = new Image();
-  image.src = 'images/' + i + '.jpg';
+  /*var image = new Image();
+  image.src = 'images/' + i + '.jpg';*/
 
-  var para = document.createElement("p");
-  para.appendChild(image);
+  var para = document.createElement("img");
+  para.src = 'images/' + i + '.jpg';
+  para.className = "img-responsive, img-circle"
+  //para.appendChild(image);
 
-  console.log(document.getElementById("images"));
+  var paragr = document.createElement("p");
+  paragr.appendChild(para);
 
-  document.getElementById("images").appendChild(para);
+  document.getElementById("images").appendChild(paragr);
 }
