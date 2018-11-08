@@ -4,5 +4,8 @@ for(var i = 1; i < 20; i++){
 
   var para = document.createElement("p");
   para.appendChild(image);
+
+  console.log(document.getElementById("images"));
+
   document.getElementById("images").appendChild(para);
 }
