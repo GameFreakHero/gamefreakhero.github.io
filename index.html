@@ -1,24 +1,31 @@
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>My Images</title>
+    <title>My Images</title>
 
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
 
-    <h1>Welcome!</h1>
-
-    <h2>Images</h2>
-    <div id="images"></div>
+    <div id="drop-area">
+        <form class="my-form">
+            <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+            <label class="button" for="fileElem">Select some files</label>
+        </form>
+        <div id="gallery"></div>
+        <progress id="progress-bar" max=100 value=0></progress>
+    </div>
 
 
     <script src="js/script.js"></script>
 
-    
+
 </body>
+
 </html>
