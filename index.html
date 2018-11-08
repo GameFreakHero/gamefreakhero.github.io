@@ -101,7 +101,7 @@
             }
             
             function uploadFile(file, i) {
-              var url = 'images/'
+              var url = ''
               var xhr = new XMLHttpRequest()
               var formData = new FormData()
               xhr.open('POST', url, true)
@@ -114,7 +114,7 @@
             
               xhr.addEventListener('readystatechange', function(e) {
                 if (xhr.readyState == 4 && xhr.status == 200) {
-                  updateProgress(i, 100) // <- Add this
+                  updateProgress(i, 100)
                 }
                 else if (xhr.readyState == 4 && xhr.status != 200) {
                   // Error. Inform the user
