@@ -1,7 +1,7 @@
-for(var i = 1; i < 3; i++){
+for(var i = 2; i > 0; i--){
   var para = document.createElement("img");
   para.src = 'images/drawings/' + i + '.jpg';
-  para.className = "img-responsive, img-circle"
+  para.className = "img-responsive, img-circle";
 
   var paragr = document.createElement("p");
   paragr.appendChild(para);
