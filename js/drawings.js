@@ -1,4 +1,4 @@
-for(var i = 9; i > 0; i--){
+for(var i = 11; i > 0; i--){
   var para = document.createElement("img");
   para.src = 'images/drawings/' + i + '.jpg';
   para.className = "img-responsive, img-circle";
