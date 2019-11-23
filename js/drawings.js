@@ -6,5 +6,5 @@ for(var i = 39; i > 0; i--){
   var paragr = document.createElement("p");
   paragr.appendChild(para);
 
-  document.getElementById("images").appendChild(paragr);
+  document.getElementById("drawings").appendChild(paragr);
 }
